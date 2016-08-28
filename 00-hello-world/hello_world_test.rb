@@ -11,9 +11,7 @@ class HelloWorldTest < Minitest::Test
   end
 
   def test_sample_name
-    assert_equal 'Hello, Alice!', hello_world('Alice'), <<-MSG
-    When given "Alice" it should greet Alice!
-    MSG
+    assert_equal('Hello, Alice!', hello_world('Alice'), "When given \"Alice\" it should greet Alice!")
   end
 
   def test_other_sample_name
